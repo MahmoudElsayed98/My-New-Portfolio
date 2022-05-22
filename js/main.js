@@ -71,8 +71,6 @@ sections.forEach((e) => {
     !e.classList.contains("settings") &&
     !e.classList.contains("footer")
   ) {
-    console.log(e);
-    console.log(e.offsetTop);
   }
 });
 window.onscroll = function () {

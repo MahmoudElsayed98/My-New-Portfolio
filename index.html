@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/master.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <title>MY PORTFOLIO</title>
+</head>
+
+<body>
+  <!-- Scroll to top -->
+  <div class="up position-fixed">
+    <i class="fas fa-angle-double-up d-flex justify-content-center align-items-center fs-4 rounded-circle"
+      role="button"></i>
+  </div>
+  <!-- Start Settings -->
+  <div class="settings position-fixed p-2 min-vh-100">
+    <div class="gear-content position-fixed start-0 rounded-end" role="button">
+      <i class="fas fa-cog gear fa-2x d-flex justify-content-center align-items-center"></i>
+    </div>
+    <div class="colors-option text-center p-2 rounded">
+      <h5>Choose Your Favorite Color :</h5>
+      <ul class="colors-list list-unstyled mb-0 d-flex justify-content-center" role="button">
+        <li class="active" data-color="#ffeb3b">
+          <i class="fas fa-tint fa-2x color"></i>
+        </li>
+        <li data-color="#ffacc8">
+          <i class="fas fa-tint fa-2x color"></i>
+        </li>
+        <li data-color="#7cff97">
+          <i class="fas fa-tint fa-2x color"></i>
+        </li>
+        <li data-color="#ffbfaa">
+          <i class="fas fa-tint fa-2x color"></i>
+        </li>
+        <li data-color="#8cf2ff">
+          <i class="fas fa-tint fa-2x color"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="navbar-scroll text-center mt-2 p-2 rounded text-light">
+      <h5>Scrolling Navbar :</h5>
+      <div class="yes-no text-center mt-1 d-flex justify-content-center mb-0">
+        <span class="me-2 p-1 ps-2 pe-2 d-block rounded active" role="button">Yes</span>
+        <span class="p-1 ps-2 pe-2 d-block rounded" role="button">No</span>
+      </div>
+    </div>
+    <div class="change-background text-center mt-2 p-2 rounded text-light">
+      <h5>Change Backgrounds :</h5>
+      <div class="back-numbers mb-1 mt-2">
+        <h6 class="d-inline-block p-1 rounded active" role="button">First</h6>
+        <h6 class="d-inline-block p-1 rounded" role="button">Second</h6>
+        <h6 class="d-inline-block p-1 rounded" role="button">Third</h6>
+      </div>
+      <div class="images d-flex justify-content-center flex-wrap gap-1">
+        <img src="images/settings/pexels-carlos-oliva-3586966.jpg" class="img-fluid rounded" role="button"
+          data-url="url(images/pexels-carlos-oliva-3586966.jpg)" alt="background-1" />
+        <img src="images/settings/pexels-lívia-bittencourt-4636525.jpg" class="img-fluid rounded" role="button"
+          data-url="url(images/pexels-lívia-bittencourt-4636525.jpg)" alt="background-2" />
+        <img src="images/settings/pexels-chait-goli-2093323.jpg" class="img-fluid rounded" role="button"
+          data-url="url(images/pexels-chait-goli-2093323.jpg)" alt="background-4" />
+        <img src="images/settings/pexels-bri-schneiter-346529.jpg" class="img-fluid rounded" role="button"
+          data-url="url(images/pexels-bri-schneiter-346529.jpg)" alt="background-3" />
+        <img src="images/settings/pexels-photo-2246476.jpeg" class="img-fluid rounded" role="button"
+          data-url="url(images/pexels-photo-2246476.jpeg)" alt="background-4" />
+        <img src="images/settings/pexels-photo-3075993.jpeg" class="img-fluid rounded" role="button"
+          data-url="url(images/pexels-photo-3075993.jpeg)" alt="background-4" />
+      </div>
+    </div>
+    <div class="btn btn-primary d-block mt-2 reset">Reset Options</div>
+  </div>
+  <!-- End Settings -->
+  <!-- Start NavBar -->
+  <nav class="navbar pt-0 pb-0 navbar-expand-lg navbar-light position-fixed top-0 w-100">
+    <div class="container">
+      <a class="navbar-brand fw-bold" role="button">El-Abedy</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#links"
+        aria-controls="links" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="bars">
+          <span class="first"></span>
+          <span class="second"></span>
+          <span class="third"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" id="links">
+        <ul class="navbar-nav ms-auto mb-0 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" data-section=".landing">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-section=".about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-section=".skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-section=".services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-section=".portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-section=".contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- END NavBar -->
+  <!-- Start Landing Section -->
+  <div class="landing">
+    <div id="firstSlide" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#firstSlide" data-bs-slide-to="0" class="active rounded-circle me-2"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#firstSlide" data-bs-slide-to="1" class="rounded-circle me-2"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#firstSlide" data-bs-slide-to="2" class="rounded-circle me-2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item vh-100 active" data-bs-interval="10000">
+          <div class="carousel-caption top-50">
+            <div class="row">
+              <div class="col col-lg-7 d-flex align-items-center">
+                <div class="text text-lg-start d-lg-flex flex-lg-column">
+                  <h1 class="fw-bold fs-4 mb-1">
+                    Hi,<br />
+                    I am <span class="span-color">Mahmoud Elsayed</span>.
+                  </h1>
+                  <p class="mb-0 lh-base lead">
+                    Brilliant and creative IT professional with Bachelor’s
+                    Degree in Information Technology and passionate about
+                    creating customized solutions seeks the position of
+                    <span class="span-color">Front-end Web Developer</span> in
+                    an exciting and growing company where I can provide
+                    quality support to company’s IT team.
+                  </p>
+                  <div class="btn btn-primary align-self-lg-end align-self-xl-center btn-sm mt-2 mt-lg-0 mt-xl-2"
+                    data-section="about">
+                    More About Me
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col col-lg-5 d-md-none d-lg-flex justify-content-end align-items-center ps-0 d-none d-md-block">
+                <div class="image rounded-circle overflow-hidden">
+                  <img src="images/ME.jpg" class="img-fluid position-relative" alt="My Personal Photo" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item vh-100" data-bs-interval="10000">
+          <div class="carousel-caption top-50">
+            <h1 class="mb-2 fw-bold fs-2">
+              My <span class="span-color">Projects</span>
+            </h1>
+            <div class="row">
+              <div class="col">
+                <img src="images/Project 1.png" class="img-fluid rounded" role="button" alt="Project 1" />
+              </div>
+              <div class="col d-none d-md-block">
+                <img src="images/Project 2.png" class="img-fluid rounded" role="button" alt="Project 2" />
+              </div>
+              <div class="col d-none d-xl-flex">
+                <img src="images/Project 3.png" class="img-fluid rounded" role="button" alt="Project 3" />
+              </div>
+            </div>
+            <div class="btn btn-primary mt-2 btn-sm" data-section="portfolio">
+              Check Out My Portfolio
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item vh-100" data-bs-interval="10000">
+          <div class="carousel-caption top-50 rounded">
+            <h1 class="fw-bold fs-2 mb-1">
+              Don't Be A Stranger<br />
+              <span class="span-color">Just Say Hello</span>.
+            </h1>
+            <p class="lead mb-2">
+              Feel Free To Get In Touch With Me. I Always Open To Discussing
+              New Projects, Creative Ideas Or Opportunities To Be Part Of Your
+              Visions.
+            </p>
+            <div class="btn btn-primary btn-sm" data-section="contact">
+              Contact Me
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#firstSlide" data-bs-slide="prev">
+        <i class="fas fa-chevron-left carousel-control-prev-icon fa-2x" aria-hidden="true"></i>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#firstSlide" data-bs-slide="next">
+        <i class="fas fa-chevron-right carousel-control-next-icon fa-2x" aria-hidden="true"></i>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <!-- End Landing Section -->
+  <!-- Start About Section -->
+  <div class="about">
+    <div class="container" style="overflow: hidden">
+      <div class="text-center special-heading position-relative" data-aos="fade-down"
+        data-aos-anchor-placement="bottom-bottom">
+        <h1 class="fw-bold display-5 mb-0 p-2">ABOUT <span>ME</span></h1>
+        <p class="position-absolute top-50 start-50 w-100 mb-0">RESUME</p>
+      </div>
+      <div class="row">
+        <div class="col-xl-7 col-lg-7 d-flex flex-column mb-4 mb-lg-0" data-aos="fade-right" data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+          <div
+            class="details text-center align-self-md-center align-self-xl-start d-flex justify-content-center align-items-center align-items-lg-start">
+            <i class="fas fa-user fa-2x position-relative me-2"></i>
+            <h1 class="text-light">Personal <span>Info</span></h1>
+          </div>
+          <div class="row d-xl-flex text-center text-md-start text-lg-start">
+            <div class="col-md-5 col-xl-4 col-lg-5 pe-lg-0">
+              <p class="mb-0 lead text-md-end text-lg-start">
+                FirstName : <span>Mahmoud</span>
+              </p>
+              <p class="mb-0 lead text-md-end text-lg-start">
+                LastName : <span>Elabedy</span>
+              </p>
+              <p class="mb-0 lead text-md-end text-lg-start">
+                Nationality : <span>Egyptian</span>
+              </p>
+              <p class="mb-0 lead text-md-end text-lg-start">
+                Age : <span>25</span>
+              </p>
+            </div>
+            <div class="col-md-6 offset-md-1 col-xl-8 col-lg-7 offset-lg-0 ps-lg-0">
+              <p class="mb-0 lead">Address : <span>Egypt</span></p>
+              <p class="mb-0 lead">
+                Email : <span>mahesayed98@gmail.com</span>
+              </p>
+              <p class="mb-0 lead">
+                Address : <span>Birket El Sab, Menofia, Egypt</span>
+              </p>
+              <p class="mb-0 lead">
+                Langages : <span>Arabic(MotherTongue) - English</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-5 col-lg-5 text-center text-lg-start" data-aos="fade-left" data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+          <div
+            class="details d-flex justify-content-center justify-content-lg-start align-items-lg-start align-items-center">
+            <i class="fas fa-user-graduate grad fa-2x position-relative me-2"></i>
+            <!-- <i
+                class="
+                  fas
+                  fa-user-graduate
+                  grad
+                  fa-2x
+                  position-relative
+                  me-2 me-xl-3
+                "
+              ></i> -->
+            <h1 class="text-light">Education</h1>
+            <!-- <h1 class="fw-bold mb-3 text-light mt-4 mt-lg-0">Education</h1> -->
+          </div>
+          <p class="lead">
+            Bachelor’s Degree in Information Technology (2020).<br />
+            Faculty of Computers and Information, Menoufia University,
+            Egypt.<br />
+            Grade : <span>Good</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="d-flex justify-content-center">
+      <a href="#" class="btn btn-info text-light mt-3" target="_blank" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">Download CV</a>
+    </div> -->
+  </div>
+  <div class="skills">
+    <div class="container" style="overflow: hidden">
+      <div class="text-center special-heading position-relative" data-aos="fade-down"
+        data-aos-anchor-placement="bottom-bottom">
+        <h1 class="fw-bold display-5 mb-0 p-2">MY <span>SKILLS</span></h1>
+        <p class="position-absolute top-50 start-50 w-100 mb-0">COURSES</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-7 d-flex flex-column justify-content-center" data-aos="fade-right" data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+          <div class="progress">
+            <div class="progress-bar fs-6 text-start" role="progressbar" style="width: 0%" data-width="94%"
+              aria-valuenow="94" aria-valuemin="0" aria-valuemax="100">
+              HTML
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar fs-6 text-start" role="progressbar" style="width: 0%" data-width="93%"
+              aria-valuenow="93" aria-valuemin="0" aria-valuemax="100">
+              CSS
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar fs-6 text-start" role="progressbar" style="width: 0%" data-width="93.5%"
+              aria-valuenow="93.5" aria-valuemin="0" aria-valuemax="100">
+              Java Script
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar fs-6 text-start" role="progressbar" style="width: 0%" data-width="92%"
+              aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+              Bootstrap
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar fs-6 text-start" role="progressbar" style="width: 0%" data-width="93.5%"
+              aria-valuenow="93.5" aria-valuemin="0" aria-valuemax="100">
+              React
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar fs-6 text-start" role="progressbar" style="width: 0%" data-width="92.5%"
+              aria-valuenow="92.5" aria-valuemin="0" aria-valuemax="100">
+              Git, GitHub
+            </div>
+          </div>
+          <div class="progress">
+            <div class="progress-bar fs-6 text-start" role="progressbar" style="width: 0%" data-width="90%"
+              aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              Photoshop
+            </div>
+          </div>
+
+        </div />
+        <div class="col-4 offset-1" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <img src="images/casual-life-3d-24.png" class="img-fluid rounded d-none d-lg-flex" alt="Progress SVG" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End About Section -->
+  <!-- Start Services Section -->
+  <div class="services">
+    <div class="container" style="overflow: hidden">
+      <div class="text-center special-heading position-relative" data-aos="fade-down"
+        data-aos-anchor-placement="bottom-bottom">
+        <h1 class="fw-bold display-5 mb-0 p-2">MY <span>SERVICES</span></h1>
+        <p class="position-absolute top-50 start-50 w-100 mb-0">ADV</p>
+      </div>
+      <div class="row text-center g-3 gap-xl-3 gap-lg-4">
+        <div class="col-xl position-relative col-lg-5 offset-lg-1 offset-xl-0 bg-primary p-4 rounded"
+          data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <i class="fas fa-dice-d20 fa-3x mb-2"></i>
+          <h3 class="fw-bold">WEB <span class="text-light">DESIGN</span></h3>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            incidunt laudantium, aut repellendus rem nam nisi, facere culpa
+            odio error quo quaerat cum alias.
+          </p>
+        </div>
+        <div class="col-xl position-relative col-lg-5 bg-primary p-4 rounded" data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom">
+          <i class="fas fa-code fa-3x mb-2"></i>
+          <h3 class="fw-bold">
+            WEB <span class="text-light">DEVELOPMENT</span>
+          </h3>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            incidunt laudantium, aut repellendus rem nam nisi, facere culpa
+            odio error quo quaerat cum alias.
+          </p>
+        </div>
+        <div class="col-xl position-relative col-lg-5 offset-lg-1 offset-xl-0 bg-primary p-4 rounded"
+          data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <i class="fab fa-resolving fa-3x mb-2"></i>
+          <h3 class="fw-bold">
+            RESPONSIVE <span class="text-light">DESIGN</span>
+          </h3>
+          <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            incidunt laudantium, aut repellendus rem nam nisi, facere culpa
+            odio error quo quaerat cum alias.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Services Section -->
+  <!-- Start Portfolio Section -->
+  <div class="portfolio">
+    <!-- Start SlideShow -->
+    <div class="slide-show position-fixed top-0 start-0">
+      <div id="projects" class="carousel slide carousel-fade w-100 h-100" data-bs-touch="false"
+        data-bs-interval="false">
+        <div class="container">
+          <div class="carousel-inner position-absolute top-50 start-50 overflow-visible">
+            <i class="fas fa-times close position-absolute text-center rounded-circle fs-4" role="button"></i>
+            <div class="carousel-item rounded active">
+              <img src="images/Project 1.png" class="w-100 rounded-top" alt="project 1" />
+              <div
+                class="preview row p-2 p-md-0 me-0 ms-0 rounded-bottom text-center text-md-end flex-column flex-md-row position-relative">
+                <div class="col p-md-2">
+                  <i class="far fa-eye me-1"></i>
+                  <a href="https://mahmoudelsayed98.github.io/E-Commerce-Website-React-Hooks/"
+                    class="text-decoration-none h6" target="_blank">Visit Website</a>
+                </div>
+                <div class="col p-md-2 d-flex justify-content-center justify-content-md-start align-items-center">
+                  <i class="fas fa-info-circle info position-relative me-2"></i>
+                  <p class="mb-0 h6">React JS</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item rounded">
+              <img src="images/Project 2.png" class="w-100 rounded-top" alt="project 2" />
+              <div
+                class="preview row p-2 p-md-0 me-0 ms-0 rounded-bottom text-center text-md-end flex-column flex-md-row position-relative">
+                <div class="col p-md-2">
+                  <i class="far fa-eye me-1"></i>
+                  <a href="https://mahmoudelsayed98.github.io/Easy-Bank-Website-React-Hooks/"
+                    class="text-decoration-none h6" target="_blank">Visit Website</a>
+                </div>
+                <div class="col p-md-2 d-flex justify-content-center justify-content-md-start align-items-center">
+                  <i class="fas fa-info-circle info position-relative me-2"></i>
+                  <p class="mb-0 h6">React JS</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item rounded">
+              <img src="images/Project 3.png" class="w-100 rounded-top" alt="project 3" />
+              <div
+                class="preview row p-2 p-md-0 me-0 ms-0 rounded-bottom text-center text-md-end flex-column flex-md-row position-relative">
+                <div class="col p-md-2">
+                  <i class="far fa-eye me-1"></i>
+                  <a href="https://mahmoudelsayed98.github.io/Blogr-landing-page-main/" class="text-decoration-none h6"
+                    target="_blank">Visit Website</a>
+                </div>
+                <div class="col p-md-2 d-flex justify-content-center justify-content-md-start align-items-center">
+                  <i class="fas fa-info-circle info position-relative me-2"></i>
+                  <p class="mb-0 h6">HTML, CSS, JavaScript</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item rounded">
+              <img src="images/Project 4.png" class="d-block w-100 rounded-top" alt="project 4" />
+              <div
+                class="preview row p-2 p-md-0 me-0 ms-0 rounded-bottom text-center text-md-end flex-column flex-md-row position-relative">
+                <div class="col p-md-2">
+                  <i class="far fa-eye me-1"></i>
+                  <a href="https://mahmoudelsayed98.github.io/Someone-World/" class="text-decoration-none h6"
+                    target="_blank">Visit Website</a>
+                </div>
+                <div class="col p-md-2 d-flex justify-content-center justify-content-md-start align-items-center">
+                  <i class="fas fa-info-circle info position-relative me-2"></i>
+                  <p class="mb-0 h6">HTML, CSS, JavaScript</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item rounded">
+              <img src="images/Project 5.png" class="d-block w-100 rounded-top" alt="project 5" />
+              <div
+                class="preview p-2 p-md-0 rounded-bottom row me-0 ms-0 text-center text-md-end flex-column flex-md-row position-relative">
+                <div class="col p-md-2">
+                  <i class="far fa-eye me-1"></i>
+                  <a href="https://mahmoudelsayed98.github.io/Kasper-Template/" class="text-decoration-none h6"
+                    target="_blank">Visit Website</a>
+                </div>
+                <div class="col p-md-2 d-flex justify-content-center justify-content-md-start align-items-center">
+                  <i class="fas fa-info-circle info position-relative me-2"></i>
+                  <p class="mb-0 h6">HTML, CSS</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item rounded">
+              <img src="images/Project 6.png" class="d-block w-100 rounded-top" alt="project 6" />
+              <div
+                class="preview p-2 p-md-0 rounded-bottom row me-0 ms-0 text-center text-md-end flex-column flex-md-row position-relative">
+                <div class="col p-md-2">
+                  <i class="far fa-eye me-1"></i>
+                  <a href="https://mahmoudelsayed98.github.io/Leon-Template/" class="text-decoration-none h6"
+                    target="_blank">Visit Website</a>
+                </div>
+                <div class="col p-md-2 d-flex justify-content-center justify-content-md-start align-items-center">
+                  <i class="fas fa-info-circle info position-relative me-2"></i>
+                  <p class="mb-0 h6">HTML, CSS</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item rounded">
+              <img src="images/Project 7.png" class="d-block w-100 rounded-top" alt="project 7" />
+              <div
+                class="preview p-2 p-md-0 rounded-bottom row me-0 ms-0 text-center text-md-end flex-column flex-md-row position-relative">
+                <div class="col p-md-2">
+                  <i class="far fa-eye me-1"></i>
+                  <a href="https://mahmoudelsayed98.github.io/My-Old-Portfolio/" class="text-decoration-none h6"
+                    target="_blank">Visit Website</a>
+                </div>
+                <div class="col p-md-2 d-flex justify-content-center justify-content-md-start align-items-center">
+                  <i class="fas fa-info-circle info position-relative me-2"></i>
+                  <p class="mb-0 h6">HTML, CSS, JavaScript</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#projects" data-bs-slide="prev">
+              <i class="fas fa-chevron-left carousel-control-prev-icon fa-2x" aria-hidden="true"></i>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projects" data-bs-slide="next">
+              <i class="fas fa-chevron-right carousel-control-next-icon fa-2x" aria-hidden="true"></i>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End SlideShow -->
+    <div class="container" style="overflow: hidden">
+      <div class="text-center special-heading position-relative" data-aos="fade-down"
+        data-aos-anchor-placement="bottom-bottom">
+        <h1 class="fw-bold display-5 mb-0 p-2">MY <span>PORTFOLIO</span></h1>
+        <p class="position-absolute top-50 start-50 w-100 mb-0">PROJECTS</p>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class="hover m-1 rounded position-relative overflow-hidden" role="button" data-aos="fade-right"
+          data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="image content position-relative text-center">
+            <img src="images/Project 1.png" class="img-fluid" alt="Project 1" />
+            <div
+              class="overlay position-absolute top-0 start-0 d-flex justify-content-center align-items-center fw-bold w-100">
+              <h4>PROJECT <span class="text-light">1</span></h4>
+            </div>
+          </div>
+        </div>
+        <div class="hover rounded m-1 position-relative overflow-hidden" role="button" data-aos="fade-down"
+          data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="image content position-relative text-center">
+            <img src="images/Project 2.png" class="img-fluid" alt="Project 2" />
+            <div
+              class="overlay position-absolute top-0 start-0 d-flex justify-content-center align-items-center fw-bold w-100">
+              <h4>PROJECT <span class="text-light">2</span></h4>
+            </div>
+          </div>
+        </div>
+        <div class="hover rounded m-1 position-relative overflow-hidden" role="button" data-aos="fade-left"
+          data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="image content position-relative text-center">
+            <img src="images/Project 3.png" class="img-fluid" alt="Project 3" />
+            <div
+              class="overlay position-absolute top-0 start-0 d-flex justify-content-center align-items-center fw-bold w-100">
+              <h4>PROJECT <span class="text-light">3</span></h4>
+            </div>
+          </div>
+        </div>
+        <div class="hover rounded m-1 position-relative overflow-hidden" role="button" data-aos="fade-up-right"
+          data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="image content position-relative text-center">
+            <img src="images/Project 4.png" class="img-fluid" alt="Project 4" />
+            <div
+              class="overlay position-absolute top-0 start-0 d-flex justify-content-center align-items-center fw-bold w-100">
+              <h4>PROJECT <span class="text-light">4</span></h4>
+            </div>
+          </div>
+        </div>
+        <div class="hover rounded m-1 position-relative overflow-hidden" role="button" data-aos="fade-up-left"
+          data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="image content position-relative text-center">
+            <img src="images/Project 5.png" class="img-fluid" alt="Project 5" />
+            <div
+              class="overlay position-absolute top-0 start-0 d-flex justify-content-center align-items-center fw-bold w-100">
+              <h4>PROJECT <span class="text-light">5</span></h4>
+            </div>
+          </div>
+        </div>
+        <div class="hover rounded m-1 position-relative overflow-hidden" role="button" data-aos="fade-up-left"
+          data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="image content position-relative text-center">
+            <img src="images/Project 6.png" class="img-fluid" alt="Project 6" />
+            <div
+              class="overlay position-absolute top-0 start-0 d-flex justify-content-center align-items-center fw-bold w-100">
+              <h4>PROJECT <span class="text-light">6</span></h4>
+            </div>
+          </div>
+        </div>
+        <div class="hover rounded m-1 position-relative overflow-hidden" role="button" data-aos="fade-up-left"
+          data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="image content position-relative text-center">
+            <img src="images/Project 7.png" class="img-fluid" alt="Project 7" />
+            <div
+              class="overlay position-absolute top-0 start-0 d-flex justify-content-center align-items-center fw-bold w-100">
+              <h4>PROJECT <span class="text-light">7</span></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Portfolio Section -->
+  <!-- Start Contact Section -->
+  <div class="contact">
+    <div class="container" style="overflow: hidden">
+      <div class="text-center special-heading position-relative" data-aos="fade-down"
+        data-aos-anchor-placement="bottom-bottom">
+        <h1 class="fw-bold display-5 mb-0 p-2">GET <span>IN</span> TOUCH</h1>
+        <p class="position-absolute top-50 start-50 w-100 mb-0">CONTACT</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0" data-aos="fade-right" data-aos-offset="300"
+          data-aos-easing="ease-in-sine">
+          <h1 class="fw-bold mb-3">
+            Don't Be A Stranger <br /><span class="text-light">Just Say Hello</span>.
+          </h1>
+          <p class="lead">
+            Feel Free To Get In Touch With Me.<br />
+            I Always Open To Discussing New Projects,<br />
+            Creative Ideas Or Opportunities To Be Part Of Your Visions.
+          </p>
+          <div class="social text-center">
+            <a href="https://www.facebook.com/profile.php?id=100027065987914" target="_blank"
+              class="text-decoration-none text-light">
+              <span class="icon d-inline-block fs-4 text-center me-3 rounded">
+                <i class="fab fa-facebook-f"></i></span></a>
+            <a href="https://www.linkedin.com/in/mahmoud-elabedy-376183183/" target="_blank"
+              class="text-decoration-none text-light">
+              <span class="icon d-inline-block fs-4 text-center me-3 rounded">
+                <i class="fab fa-linkedin-in"></i>
+              </span>
+            </a>
+            <a href="https://twitter.com/MahmoudESayed9" target="_blank" class="text-decoration-none text-light">
+              <span class="icon d-inline-block fs-4 text-center me-3 rounded">
+                <i class="fab fa-twitter"></i>
+              </span>
+            </a>
+            <a href="#" target="_blank" class="text-decoration-none text-light">
+              <span class="icon d-inline-block fs-4 text-center me-3 rounded">
+                <i class="fab fa-github"></i>
+              </span>
+            </a>
+          </div>
+        </div>
+        <form class="row g-3 col-lg-6 mt-0" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+          <div class="col-6 mt-0">
+            <input type="text" class="form-control text-primary" placeholder="Your Name" aria-label="Name" />
+          </div>
+          <div class="col-6 mt-0">
+            <input type="text" class="form-control text-primary" placeholder="Your Subject" aria-label="Subject" />
+          </div>
+          <div class="col-12">
+            <input type="email" class="form-control text-primary" id="exampleFormControlInput1"
+              placeholder="Your Email : name@example.com" />
+          </div>
+          <div class="col-12">
+            <textarea class="form-control text-primary" placeholder="Your Message" rows="6"></textarea>
+          </div>
+          <div class="col d-flex justify-content-end">
+            <button type="submit" class="btn btn-info">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="footer text-center text-light p-3">
+    &copy; 2021 All Rights Reserved<br />
+    Created by <span class="fw-bold">El-Abedy</span>
+  </div>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
